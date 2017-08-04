@@ -9,57 +9,66 @@
   height: 70px;
   margin: 0;
   border-radius: 0; }
-  .navbar .navbar-nav {
-    padding-left: 140px; }
-    .navbar .navbar-nav li {
-      text-align: center;
-      padding-top: 5px;
-      padding-left: 60px;
-      padding-right: 60px; }
-      .navbar .navbar-nav li a {
-        color: #000;
-        text-transform: uppercase;
-        font-family: "Amatica SC", sans-serif;
-        font-size: 24px;
-        font-weight: bold; }
+  .navbar .navbar-nav li {
+    text-align: center;
+    padding-top: 5px; }
+    .navbar .navbar-nav li a {
+      color: #000;
+      text-transform: uppercase;
+      font-family: "Amatica SC", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 9px;
+      padding-top: 7px;
+      padding-bottom: 10px; }
       .navbar .navbar-nav li a:hover {
-        background-color: #FFF; }
+        border-top: 1px solid;
+        border-bottom: 1px solid; }
   .navbar .navbar-brand {
     padding-top: 2px; }
     .navbar .navbar-brand .nav_logo {
       width: 45px; }
 
-header .col-xs-12 {
-  padding-right: 0; }
-header .home_background_truck {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 120%;
-  width: 100%; }
-  header .home_background_truck .home_header_logo {
-    margin-top: 10%;
-    text-align: center; }
-    header .home_background_truck .home_header_logo img {
-      width: 10%;
-      opacity: 0.9; }
-  header .home_background_truck .home_paragraphe {
-    text-align: center; }
-    header .home_background_truck .home_paragraphe p {
-      color: #FFF;
-      font-family: "Amatica SC";
-      font-weight: bold;
-      font-size: 20px;
+header {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+  header .home_header_background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: auto;
+    position: relative; }
+    header .home_header_background video {
+      height: 100%;
+      width: 100%;
+      position: 50% 50%;
+      position: absolute;
+      z-index: -1; }
+    header .home_header_background .home_header_logo {
+      margin-top: 11%;
       text-align: center;
-      margin-top: 5px;
-      padding-bottom: 30px; }
+      z-index: 1; }
+      header .home_header_background .home_header_logo img {
+        width: 12%;
+        opacity: 0.9; }
+    header .home_header_background .home_paragraphe {
+      text-align: center; }
+      header .home_header_background .home_paragraphe p {
+        color: #ffbe2e;
+        font-family: "Amatica SC";
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px; }
 
 #home_certifications {
-  padding-top: 50px; }
-  #home_certifications img {
-    width: 100px;
-    height: 100px;
-    padding: 5px; }
+  padding: 50px 0;
+  margin-top: 40px; }
+  #home_certifications .row {
+    display: flex;
+    align-items: center;
+    text-align: center; }
+    #home_certifications .row .home_label {
+      width: 100px;
+      opacity: 0.8; }
 
 /*# sourceMappingURL=styles.css.map */
