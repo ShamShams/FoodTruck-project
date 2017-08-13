@@ -1,93 +1,154 @@
-/*
-Error: Illegal nesting: Only properties may be nested beneath properties.
-        on line 70 of stylesheets/home.scss
-        from line 1 of stylesheets/index.scss
+.home_html {
+  margin: 0;
+  padding: 0; }
 
-65:       text-align: center;
-66:       background-color: $color-white;
-67:       padding-top: 5px;
-68:       padding-left: 35px;
-69:       padding-right: 35px;
-70:       @media only screen and (max-width: 1200px) {
-71:         padding-left: 30px;
-72:         padding-right: 30px;
-73:       }
-74:       @media only screen and (max-width: 1000px) {
-75:         padding-left: 10px;
+.navbar {
+  background-color: #FFF;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  border-radius: 0; }
+  .navbar .container-fluid {
+    margin-left: 10px; }
+  .navbar .navbar-header .navbar-toggle {
+    float: left;
+    background-color: #FFF;
+    margin-left: 15px; }
+  .navbar .navbar-brand {
+    padding-top: 2px; }
+    @media all and (max-width: 767px) {
+      .navbar .navbar-brand {
+        position: absolute;
+        left: 46%; } }
+    .navbar .navbar-brand .nav_logo {
+      width: 45px; }
+  .navbar .navbar-nav {
+    padding-left: 50px;
+    background-color: #FFF; }
+    .navbar .navbar-nav li {
+      text-align: center;
+      background-color: #FFF;
+      padding-top: 5px;
+      padding-left: 35px;
+      padding-right: 35px; }
+      @media all and (max-width: 1200px) {
+        .navbar .navbar-nav li {
+          padding-left: 30px;
+          padding-right: 30px; } }
+      @media all and (max-width: 1000px) {
+        .navbar .navbar-nav li {
+          padding-left: 10px;
+          padding-right: 10px; } }
+      @media all and (max-width: 767px) {
+        .navbar .navbar-nav li {
+          z-index: 1;
+          border-bottom: 1px solid #A6A6A6; } }
+      .navbar .navbar-nav li a {
+        color: #000;
+        background-color: #FFF;
+        text-transform: uppercase;
+        font-family: "Amatica SC", sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 9px;
+        padding-top: 7px;
+        padding-bottom: 10px; }
+        @media all and (max-width: 1100px) {
+          .navbar .navbar-nav li a {
+            font-size: 20px; } }
+        .navbar .navbar-nav li a:hover {
+          color: #ffbe2e;
+          border-top: 1px solid #ffbe2e;
+          border-bottom: 1px solid #ffbe2e;
+          background-color: #FFF; }
 
-Backtrace:
-stylesheets/home.scss:70
-stylesheets/index.scss:1
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:24:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 70 of stylesheets/home.scss\A         from line 1 of stylesheets/index.scss\A \A 65:       text-align: center;\A 66:       background-color: $color-white;\A 67:       padding-top: 5px;\A 68:       padding-left: 35px;\A 69:       padding-right: 35px;\A 70:       @media only screen and (max-width: 1200px) {\A 71:         padding-left: 30px;\A 72:         padding-right: 30px;\A 73:       }\A 74:       @media only screen and (max-width: 1000px) {\A 75:         padding-left: 10px;"; }
+header {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+  header .home_header_background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: relative; }
+    @media all and (max-width: 1023px) {
+      header .home_header_background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header.jpg");
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; } }
+    header .home_header_background video {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+      z-index: -2; }
+      @media all and (max-width: 1023px) {
+        header .home_header_background video {
+          display: none; } }
+    header .home_header_background .home_header_logo {
+      margin-top: 11%;
+      text-align: center;
+      z-index: -1; }
+      header .home_header_background .home_header_logo img {
+        width: 180px;
+        opacity: 0.9; }
+        @media all and (max-width: 1280px) {
+          header .home_header_background .home_header_logo img {
+            width: 150px; } }
+        @media all and (max-width: 980px) {
+          header .home_header_background .home_header_logo img {
+            width: 120px; } }
+        @media all and (max-width: 550px) {
+          header .home_header_background .home_header_logo img {
+            width: 20%; } }
+      @media all and (max-width: 500px) {
+        header .home_header_background .home_header_logo {
+          margin-top: 30%; } }
+    header .home_header_background .home_paragraphe {
+      text-align: center; }
+      header .home_header_background .home_paragraphe p {
+        color: #ffbe2e;
+        font-family: "Amatica SC";
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        margin-top: 30px; }
+        @media all and (max-width: 500px) {
+          header .home_header_background .home_paragraphe p {
+            margin-top: 30px; } }
+        @media all and (max-width: 1100px) {
+          header .home_header_background .home_paragraphe p {
+            font-size: 25px; } }
+        @media all and (max-width: 800px) {
+          header .home_header_background .home_paragraphe p {
+            font-size: 20px; } }
+        @media all and (max-width: 500px) {
+          header .home_header_background .home_paragraphe p {
+            font-size: 15px; } }
+        @media all and (max-width: 320px) {
+          header .home_header_background .home_paragraphe p {
+            font-size: 10px; } }
+
+#home_certifications {
+  padding: 40px 0; }
+  #home_certifications .row {
+    display: flex;
+    align-items: center;
+    text-align: center; }
+    #home_certifications .row .home_label {
+      width: 100px;
+      opacity: 0.8; }
+      @media all and (max-width: 1200px) {
+        #home_certifications .row .home_label {
+          width: 70px; } }
+      @media all and (max-width: 767px) {
+        #home_certifications .row .home_label {
+          width: 50px; } }
+      @media all and (max-width: 500px) {
+        #home_certifications .row .home_label {
+          width: 35px; } }
+      @media all and (max-width: 320px) {
+        #home_certifications .row .home_label {
+          width: 25px; } }
+
+/*# sourceMappingURL=styles.css.map */
