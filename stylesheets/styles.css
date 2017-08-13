@@ -77,7 +77,6 @@ header {
         background-position: center;
         background-size: cover; } }
     header .home_header_background video {
-      height: 100%;
       width: 100%;
       position: absolute;
       object-fit: cover;
@@ -86,7 +85,7 @@ header {
         header .home_header_background video {
           display: none; } }
     header .home_header_background .home_header_logo {
-      margin-top: 11%;
+      margin-top: 10%;
       text-align: center;
       z-index: -1; }
       header .home_header_background .home_header_logo img {
@@ -129,26 +128,65 @@ header {
           header .home_header_background .home_paragraphe p {
             font-size: 10px; } }
 
-#home_certifications {
-  padding: 40px 0; }
-  #home_certifications .row {
+.home_certifications {
+  padding: 30px 0; }
+  .home_certifications .row {
     display: flex;
     align-items: center;
     text-align: center; }
-    #home_certifications .row .home_label {
+    .home_certifications .row .home_label {
       width: 100px;
       opacity: 0.8; }
       @media all and (max-width: 1200px) {
-        #home_certifications .row .home_label {
+        .home_certifications .row .home_label {
           width: 70px; } }
       @media all and (max-width: 767px) {
-        #home_certifications .row .home_label {
+        .home_certifications .row .home_label {
           width: 50px; } }
       @media all and (max-width: 500px) {
-        #home_certifications .row .home_label {
+        .home_certifications .row .home_label {
           width: 35px; } }
-      @media all and (max-width: 320px) {
-        #home_certifications .row .home_label {
+      @media all and (max-width: 430px) {
+        .home_certifications .row .home_label {
           width: 25px; } }
+
+.idee-recue {
+  text-align: center;
+  font-family: "Amatica SC";
+  padding: 70px 0; }
+  .idee-recue .idee-recue-title {
+    font-weight: bolder;
+    font-size: 40px; }
+    @media all and (max-width: 500px) {
+      .idee-recue .idee-recue-title {
+        font-size: 30px; } }
+    @media all and (max-width: 320px) {
+      .idee-recue .idee-recue-title {
+        font-size: 25px; } }
+  .idee-recue .idee-recue-hr {
+    border: 1px solid #94E8B4;
+    width: 500px;
+    margin-bottom: 40px; }
+  .idee-recue .idee-recue-box {
+    background-color: rgba(245, 244, 206, 0.63);
+    box-shadow: 13px 13px 0 #94E8B4;
+    margin: 25px 15px;
+    padding: 7px 25px;
+    height: 160px; }
+  .idee-recue .idee-recue-num {
+    font-family: "Josefin Sans";
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 #94E8B4;
+    margin-bottom: 5px; }
+  .idee-recue .idee-recue-text {
+    font-size: 24px;
+    font-weight: bold; }
+    @media all and (max-width: 500px) {
+      .idee-recue .idee-recue-text {
+        font-size: 21px; } }
+    @media all and (max-width: 320px) {
+      .idee-recue .idee-recue-text {
+        font-size: 18px; } }
 
 /*# sourceMappingURL=styles.css.map */

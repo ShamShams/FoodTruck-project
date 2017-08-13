@@ -4,6 +4,7 @@
 $color-black: #000;
 $color-white: #FFF;
 $color-mustard: #ffbe2e;
+$color-green-shadow: #94E8B4;
 
 /// Fonts:
 $font-amatica: 'Amatica SC';
@@ -123,7 +124,6 @@ header {
     }
 
     video {
-      height: 100%;
       width: 100%;
       position: absolute;
       object-fit: cover;
@@ -147,7 +147,7 @@ header {
           width: 20%;
         }
       }
-      margin-top: 11%;
+      margin-top: 10%;
       text-align: center;
       z-index: -1;
       @media all and (max-width: 500px) {
@@ -184,8 +184,8 @@ header {
 }
 
 ////////// CERTIFICATIONS //////////
-#home_certifications {
-  padding: 40px 0;
+.home_certifications {
+  padding: 30px 0;
   .row {
     display: flex;
     align-items: center;
@@ -203,9 +203,56 @@ header {
       @media all and (max-width: 500px) {
         width: 35px;
       }
-      @media all and (max-width: 320px) {
+      @media all and (max-width: 430px) {
         width: 25px;
       }
+    }
+  }
+}
+
+////////// IDEES RECUES //////////
+.idee-recue {
+  text-align: center;
+  font-family: $font-amatica;
+  padding: 70px 0;
+
+  .idee-recue-title {
+    font-weight: bolder;
+    font-size: 40px;
+    @media all and (max-width: 500px) {
+      font-size: 30px;
+    }
+    @media all and (max-width: 320px) {
+      font-size: 25px;
+    }
+  }
+  .idee-recue-hr {
+    border: 1px solid $color-green-shadow;
+    width: 500px;
+    margin-bottom: 40px;
+  }
+  .idee-recue-box {
+    background-color: rgba(#f5f4ce, 0.63);
+    box-shadow: 13px 13px 0 $color-green-shadow;
+    margin: 25px 15px;
+    padding: 7px 25px;
+    height: 160px;
+  }
+  .idee-recue-num {
+    font-family: $font-josefin;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 $color-green-shadow;
+    margin-bottom: 5px;
+  }
+  .idee-recue-text {
+    font-size: 24px;
+    font-weight: bold;
+    @media all and (max-width: 500px) {
+      font-size: 21px;
+    }
+    @media all and (max-width: 320px) {
+      font-size: 18px;
     }
   }
 }
