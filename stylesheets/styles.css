@@ -189,4 +189,29 @@ header {
       .idee-recue .idee-recue-text {
         font-size: 18px; } }
 
+.footer-icons li {
+  display: inline;
+  float: right;
+  padding: 2px 20px; }
+.footer-icons a {
+  color: #FFF;
+  opacity: 0.7; }
+
+.twitter:hover {
+  color: #55acee; }
+
+.facebook:hover {
+  color: #3b5998; }
+
+.youtube:hover {
+  color: #bb0000; }
+
+footer {
+  color: #FFF;
+  background-color: #2D2D2D;
+  padding: 10px 0; }
+
+.copyright {
+  margin-top: 7px; }
+
 /*# sourceMappingURL=styles.css.map */
